@@ -1,0 +1,59 @@
+.hero {
+    background-image:
+    linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url("../images/team.jpg"); 
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;        
+    padding-top: 200px;
+    padding-bottom: 200px;
+    
+    &__title {
+        color: $primary-white-color;
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.36;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        color: $primary-white-color;
+        background-color: $accent-blue-color;
+        cursor: pointer;
+        font-family: inherit;  
+        display: block;
+        margin: auto;
+        height: 50px;       
+        border: 1px solid transparent;
+        border-radius: 4px;
+        padding: 10px 32px;  
+
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__button:hover,
+    &__button:focus {
+    color: $primary-white-color;
+    background-color: $active-color;
+    }
+    
+    &__button--description {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    }
+}
+
+.hero-wrapper {
+    background-position: center;   
+    justify-content: center;    
+}
+

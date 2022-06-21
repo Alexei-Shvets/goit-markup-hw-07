@@ -1,0 +1,153 @@
+.page-header {
+    background-color: $primary-white-color;
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+
+    & .logo {
+        color: $accent-blue-color;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-right: 93px;
+        text-decoration: none;
+        padding-top: 24px;
+        padding-bottom: 5px;
+        
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &__icon {
+            color: $highlight-color;
+        }
+        &__icon:hover,    
+        &__icon:focus {
+        color: #7B68EE;
+        &:active {
+        color: $active-color;
+        }
+        }
+        
+}}
+
+    .nav-area {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        display: flex;    
+        align-items: center;
+
+        &__item:not(:last-child) {
+            margin-right: 50px;
+        }        
+
+
+
+        &__link {
+            position: relative;
+            display: block;
+            padding: 32px 0px;
+            color: $primary-text-color; 
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:active {
+                color: $active-color;
+            }
+            &:hover,
+            &:focus {
+                color: $accent-blue-color;
+            }
+        }
+
+        &__link--current {
+            color: $accent-blue-color;   
+
+            &:after {
+                display: inline-block;
+                content: "";
+                position: absolute;
+                background-color: $accent-blue-color;
+                bottom: -1px;
+                right: 0px;
+                width: 100%;
+                height: 4px;
+                border-radius: 2px;
+            }     
+        }
+    
+    }
+
+    .contacts {
+        display: flex;    
+        margin-left: auto;  
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        &__item a {
+        color: $description-text-color;
+        display: flex; 
+        padding-top: 32px;
+        padding-bottom: 32px;
+
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        &__item:not(:last-child) {
+        margin-right: 50px;
+        }
+        &__item a:hover,
+        &__item a:focus {
+            color: $accent-blue-color; 
+        }
+
+        &__item a:active {
+            color: $active-color;
+        }
+
+        &__link:hover,
+        &__link:focus {
+        --color3: #2196F3;
+        }
+
+        &__link {
+            transition-property: --color3;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);                      
+        }
+    }
+
+        .contacts__icon--letter,
+        .contacts__icon--tel {
+            content: "";
+            height: 100%;        
+            display: flex;
+            background-size: contain;
+            align-items: center;
+            justify-content: center;            
+            margin-right: 10px;  
+        }      
+
+
+

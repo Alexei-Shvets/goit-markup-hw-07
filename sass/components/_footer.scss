@@ -1,0 +1,257 @@
+.footer {
+    background-color: $decoration-line;
+    padding-top: 60px;
+    }
+
+    .ending {
+    background-color: $decoration-line;
+    display: flex;     
+    }
+
+    .logo {
+        color: $accent-blue-color;
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-right: 93px;
+        text-decoration: none;
+        margin-bottom: 20px;                              
+        
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        
+        &__icon {
+            color: $primary-white-color;
+        }       
+        }
+        
+
+
+    .logo-from-ending {
+    display: inline-table;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;         
+    }
+
+    .ending .address-list {
+    width: 231px;
+    height: 81px;
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 0px;       
+    }
+
+    .address-from-footer:not(:last-child) {
+    margin-bottom: 9px;
+    }
+
+/* ветка с социальными сетями */ 
+    .footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+    width: 206px;
+    height: 80px;
+    margin-top: 9px;
+    margin-left: 70px;
+    margin-bottom: 100px;           
+    }
+
+    .join {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    line-height: 100%;
+    font-weight: 700px;
+    color: $primary-white-color;
+    margin-bottom: 20px;
+    }
+
+    .last-socials {
+    display: flex;  
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    height: 100%;
+    color: $primary-white-color;
+    background-color: rgba(255, 255, 255, 0.1);;    
+    background-repeat: no-repeat; 
+    justify-content: center;
+    align-items: center; 
+    
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .last-socials:hover, 
+    .last-socials:focus {       
+    background-color: $accent-blue-color;
+    }
+  
+    .last-socials:hover, 
+    .last-socials:focus {
+    color:#FFFFFF; 
+    }
+
+    .last-socials {
+    fill: currentColor;
+    }
+     
+    .footer-social-network { 
+    display: flex; 
+    color:#FFFFFF;    
+    text-align: center;               
+    }
+    
+    .footer-adress-menu {
+    display: inline-block;
+    width: 231px;
+    padding: 0px;
+    }
+
+    .footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    
+    .footer-icons > li {
+    width: 44px;
+    height: 44px;
+    }
+
+    .footer-icons > li:not(:last-child) {
+    margin-right: 10px;
+    }
+
+    /*Форма футера*/
+
+    form {
+    display: flex;
+    outline: transparent;
+    }
+
+    .e-mail-input {
+    display: block;      
+    width: 570px;
+    height: 86px;      
+    margin-left: 93px;
+    margin-bottom: 94px;
+    margin-top: 9px;
+    }
+
+    .subscribe {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    line-height: 100%;
+    font-weight: 700px;
+    color: $primary-white-color;      
+    }
+
+    .email-line {
+    display: inline-block;
+    width: 358px;      
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));      
+    margin-right: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 700px;
+    line-height: 100%;
+    background-color: $decoration-line;
+    color: $primary-white-color;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    padding-right: 16px;   
+    }
+
+    .button-form {
+    display: flex;
+    min-width: 200px;      
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $accent-blue-color;
+    border: 1px solid transparent;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: auto;
+    justify-content: center;               
+
+    transition-property: background-color, color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .join-us {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    margin-right: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;      
+    color: $primary-white-color;
+    }
+
+    .icon-send {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    }
+
+    .button-form:hover,
+    .button-form:focus {
+    color: $primary-white-color;
+    background-color: $active-color;
+    }
+
+    .footer-hidden {
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    }
+
+    .main-adress {
+        color: #FFFFFF;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        
+    }
+    
+    .address-from-footer a {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+    
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    
+    .ending .address-list .main-adress {
+        color: $primary-white-color;
+    }
+    
+    .ending .address-list .main-adress:hover {
+    color: $accent-blue-color;
+    }
